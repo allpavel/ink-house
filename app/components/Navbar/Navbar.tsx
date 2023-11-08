@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BsCart3 } from "react-icons/bs";
 import OpenMenu from "../ui/OpenMenu/OpenMenu";
 import CloseMenu from "../ui/CloseMenu/CloseMenu";
 
@@ -12,31 +13,36 @@ export default function Navbar() {
     <nav
       role="navigation"
       aria-label="Main menu"
-      className="relative flex flex-col items-start bg-main-color-200 p-4"
+      className="relative flex bg-main-color-200 p-4 sm:flex-row-reverse sm:justify-between sm:px-4 sm:py-0 md:gap-14"
     >
-      <button
-        onClick={toggleMenu}
-        className="cursor-pointer"
-        aria-expanded={isOpen}
-      >
-        {isOpen ? <CloseMenu /> : <OpenMenu />}
-        <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
-      </button>
+      <div className="flex grow items-center justify-between sm:grow-0 ">
+        <button
+          onClick={toggleMenu}
+          className="cursor-pointer sm:hidden"
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <CloseMenu /> : <OpenMenu />}
+          <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
+        </button>
+        <button>
+          <BsCart3 className="h-6 w-full" />
+        </button>
+      </div>
       <div
         className={`${
-          isOpen ? "fixed block overflow-hidden" : "hidden"
-        } absolute left-0 right-0 top-14 flex flex-col bg-main-color-200`}
+          isOpen ? "fixed block overflow-hidden" : "hidden sm:flex"
+        } absolute left-0 right-0 top-14 flex flex-col bg-main-color-200 sm:static sm:flex-row sm:items-center md:gap-14`}
       >
         <a
           href="#reprotukzii"
-          className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400"
+          className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400 sm:mb-0 sm:pl-0"
           onClick={toggleMenu}
         >
           Репродукции
         </a>
         <a
           href="#novinki"
-          className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400"
+          className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400 sm:mb-0"
           onClick={toggleMenu}
         >
           Новинки
