@@ -1,5 +1,3 @@
 export default function MainPage() {
-  return (
-    <div>Start the page</div>
-  )
+  return <div>Start the page1</div>;
 }
