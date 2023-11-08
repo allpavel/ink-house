@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="flex items-center justify-center gap-2 p-4 font-raleway text-xl font-bold text-main-green">
+    <header className="flex items-center justify-center gap-2 p-4 font-raleway text-xl font-bold text-main-color-400">
       <svg
         width="36"
         height="35"
