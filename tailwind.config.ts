@@ -23,6 +23,9 @@ const config: Config = {
         "main-color-200": "#E1EDE6",
         "main-color-100": "#F4F6F5",
       },
+      rotate: {
+        Y: "rotateY(180deg)",
+      },
     },
   },
   plugins: [],
