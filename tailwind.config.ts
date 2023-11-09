@@ -19,7 +19,8 @@ const config: Config = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        "main-green": "#598D66",
+        "main-color-400": "#598D66",
+        "main-color-200": "#E1EDE6",
       },
     },
   },
