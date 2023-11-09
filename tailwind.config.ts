@@ -21,6 +21,7 @@ const config: Config = {
         current: "currentColor",
         "main-color-400": "#598D66",
         "main-color-200": "#E1EDE6",
+        "main-color-100": "#F4F6F5",
       },
     },
   },
