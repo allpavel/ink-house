@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={raleway.variable}>
-      <body>
+      <body className="text-main-black">
         <Header />
         {children}
       </body>
