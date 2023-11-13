@@ -33,7 +33,7 @@ export default function CallToAction() {
             предопределяет высокую востребованность направлений прогрессивного
             развития.
           </p>
-          <button className="w-2/4 bg-button-yellow px-14 py-4 text-main-black">
+          <button className="w-2/4 bg-button-yellow-400 px-14 py-4 text-main-black transition-colors hover:bg-button-yellow-600">
             Ознакомиться
           </button>
         </div>
