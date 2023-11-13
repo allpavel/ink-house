@@ -12,6 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "call-to-action":
+          "linear-gradient(90deg, rgba(0,0,0,0.60) 63%, rgba(237,241,242,0.17) 100%), url('../public/bg-cta-small.webp')",
       },
       fontFamily: {
         raleway: ["var(--font-raleway)"],
@@ -22,9 +24,8 @@ const config: Config = {
         "main-color-400": "#598D66",
         "main-color-200": "#E1EDE6",
         "main-color-100": "#F4F6F5",
-      },
-      rotate: {
-        Y: "rotateY(180deg)",
+        "main-black": "#2C2D35",
+        "button-yellow": "#EEDB6D",
       },
     },
   },

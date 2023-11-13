@@ -4,8 +4,8 @@ import heroImage from "@/public/hero.png";
 export default function Hero() {
   return (
     <section className="bg-main-color-100 font-raleway">
-      <div className="mx-auto max-w-7xl gap-8 px-4 py-14 sm:flex sm:items-center sm:justify-center sm:pt-0">
-        <div className="hidden rotate-Y sm:block sm:max-w-[330px] lg:max-w-[540px]">
+      <div className="mx-auto max-w-6xl gap-8 px-4 py-14 sm:flex sm:items-center sm:justify-center sm:pt-0">
+        <div className="rotate-Y hidden sm:block sm:max-w-[330px] lg:max-w-[540px]">
           <Image src={heroImage} alt="A brown bird sits on a branch" />
         </div>
         <div>
