@@ -19,7 +19,7 @@ export default function TabLink({
   return (
     <a
       href={`#${hash[0] === "#" ? hash.slice(1) : hash}`}
-      className={`rounded-3xl bg-main-color-200 px-5 py-3${
+      className={`inline-flex items-center whitespace-nowrap rounded-3xl bg-main-color-200 px-5 py-3${
         active ? " bg-main-color-400 text-white" : ""
       }`}
       onClick={() => setActive(value)}
