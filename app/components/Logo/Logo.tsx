@@ -1,6 +1,14 @@
-export default function Logo() {
+interface LogoProps {
+  className?: string;
+}
+
+export default function Logo({ className = "" }: LogoProps) {
   return (
-    <div className="flex items-center justify-center gap-2 p-4 font-raleway text-xl font-bold text-main-color-400">
+    <div
+      className={`flex items-center justify-center gap-2 font-raleway text-xl font-bold text-main-color-400${
+        className.length > 0 ? " " + className : ""
+      }`}
+    >
       <svg
         width="36"
         height="35"
