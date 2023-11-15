@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className=" md:bg-main-color-200">
       <div className="mx-auto flex max-w-6xl flex-col justify-between md:flex-row">
-        <Logo />
+        <Logo className="p-4" />
         <Navbar />
       </div>
     </header>
