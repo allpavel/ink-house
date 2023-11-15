@@ -31,6 +31,9 @@ const config: Config = {
         "button-yellow-400": "#EEDB6D",
         "button-yellow-600": "#D9B949",
       },
+      screens: {
+        xs: "500px",
+      },
     },
   },
   plugins: [],
