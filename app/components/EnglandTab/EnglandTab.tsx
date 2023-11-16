@@ -1,12 +1,12 @@
 import Card from "../ui/Card/Card";
-import { franceCards } from "@/app/data";
+import { englandCards } from "@/app/data";
 
-export default function FranceTab({ isActive }: { isActive: boolean }) {
+export default function EnglandTab({ isActive }: { isActive: boolean }) {
   return (
     <section
       className={`mx-auto ${isActive ? "grid" : "hidden"} max-w-6xl gap-7`}
     >
-      {franceCards.map((card) => (
+      {englandCards.map((card) => (
         <Card
           image={card.image}
           alt={card.alt}

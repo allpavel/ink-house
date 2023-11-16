@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import TabLink from "../ui/TabLink/TabLink";
 
-export default function TabHeader() {
-  const [activeTab, setActiveTab] = useState("franzia");
+interface TabProps {
+  activeTab: string;
+  setActiveTab: (name: string) => void;
+}
 
+export default function TabHeader({ activeTab, setActiveTab }: TabProps) {
   const handleActiveTab = (name: string) => {
     setActiveTab(name);
   };
