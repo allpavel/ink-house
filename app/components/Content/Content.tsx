@@ -7,7 +7,7 @@ export default function Content() {
       <div className="relative mx-auto flex flex-col overflow-hidden p-4">
         <h2 className="text-2xl font-medium">Репродукции</h2>
         <TabHeader />
-        <section className="w-full">
+        <section className="mx-auto grid max-w-6xl gap-7">
           <FranceTab />
         </section>
       </div>

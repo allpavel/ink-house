@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-grid-areas {
+  grid-template-areas:
+    "logo logo"
+    "tel repr"
+    "novinki about"
+    "social social";
+}
+
+.grid-logo {
+  grid-area: logo;
+}
+
+.grid-tel {
+  grid-area: tel;
+}
+
+.grid-repr {
+  grid-area: repr;
+}
+
+.grid-novinki {
+  grid-area: novinki;
+}
+
+.grid-about {
+  grid-area: about;
+}
+
+.grid-social {
+  grid-area: social;
+}
+
+@media (min-width: 640px) {
+  .footer-grid-areas {
+    grid-template-areas:
+      "logo logo logo tel"
+      "repr novinki about social";
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-grid-areas {
+    grid-template-areas:
+      "logo novinki about repr social"
+      "tel novinki about repr social";
+  }
+}

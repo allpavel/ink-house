@@ -13,19 +13,16 @@ export default function Navbar() {
     <nav
       role="navigation"
       aria-label="Main menu"
-      className="relative flex bg-main-color-200 p-4 sm:flex-row-reverse sm:justify-between sm:px-4 sm:py-0 md:gap-14"
+      className="relative flex bg-main-color-200 p-4 sm:justify-between sm:px-4 sm:py-0 md:gap-14"
     >
-      <div className="flex grow items-center justify-between sm:grow-0 ">
+      <div className="flex grow items-center justify-between sm:hidden sm:grow-0 ">
         <button
           onClick={toggleMenu}
-          className="cursor-pointer sm:hidden"
+          className="cursor-pointer"
           aria-expanded={isOpen}
         >
           {isOpen ? <CloseMenu /> : <OpenMenu />}
           <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
-        </button>
-        <button>
-          <BsCart3 className="h-6 w-full" />
         </button>
       </div>
       <div
@@ -55,6 +52,9 @@ export default function Navbar() {
           О нас
         </a>
       </div>
+      <button>
+        <BsCart3 className="h-6 w-full" />
+      </button>
     </nav>
   );
 }

@@ -1,17 +1,20 @@
 import Card from "../ui/Card/Card";
-import image1 from "@/public/france/01.jpg";
+import { franceCards } from "@/app/data";
 
 export default function FranceTab() {
   return (
-    <section>
-      <Card
-        image={image1}
-        alt={"Зеленый лес и Амур с луком"}
-        author="Марсель Руссо"
-        title="Охота Амура"
-        description="Холст, масло (50х80)"
-        price="14 500 руб"
-      />
-    </section>
+    <>
+      {franceCards.map((card) => (
+        <Card
+          image={card.image}
+          alt={card.alt}
+          title={card.title}
+          description={card.description}
+          price={card.price}
+          author={card.author}
+          key={card.id}
+        />
+      ))}
+    </>
   );
 }
