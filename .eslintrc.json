@@ -5,11 +5,12 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/strict",
     "prettier"
   ],
   "ignorePatterns": ["dist", ".eslintrc.cjs"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["unused-imports"],
+  "plugins": ["unused-imports", "jsx-a11y"],
   "rules": {
     "no-console": "error",
     "unused-imports/no-unused-imports": "error",
