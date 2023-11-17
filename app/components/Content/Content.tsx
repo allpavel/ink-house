@@ -9,7 +9,7 @@ export default function Content() {
   const [activeTab, setActiveTab] = useState("franzia");
 
   return (
-    <section className="bg-main-color-100">
+    <section className="bg-main-color-100" id="reprodukzii">
       <div className="relative mx-auto flex max-w-6xl flex-col overflow-hidden p-4">
         <h2 className="text-2xl font-medium">Репродукции</h2>
         <TabHeader activeTab={activeTab} setActiveTab={setActiveTab} />

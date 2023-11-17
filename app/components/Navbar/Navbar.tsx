@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import OpenMenu from "../ui/OpenMenu/OpenMenu";
 import CloseMenu from "../ui/CloseMenu/CloseMenu";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,27 +31,27 @@ export default function Navbar() {
           isOpen ? "fixed block overflow-hidden" : "hidden sm:flex"
         } absolute left-0 right-0 top-14 flex flex-col bg-main-color-200 sm:static sm:flex-row sm:items-center md:gap-14`}
       >
-        <a
-          href="#reprotukzii"
+        <Link
+          href="#reprodukzii"
           className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400 sm:mb-0 sm:pl-0"
           onClick={toggleMenu}
         >
           Репродукции
-        </a>
-        <a
+        </Link>
+        <Link
           href="#novinki"
           className="mb-2 border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400 sm:mb-0"
           onClick={toggleMenu}
         >
           Новинки
-        </a>
-        <a
+        </Link>
+        <Link
           href="#onas"
           className="border-2 border-transparent bg-main-color-200 p-4 active:border-2 active:border-main-color-400"
           onClick={toggleMenu}
         >
           О нас
-        </a>
+        </Link>
       </div>
       <button>
         <BsCart3 className="h-6 w-full" />

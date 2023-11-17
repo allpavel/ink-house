@@ -1,6 +1,9 @@
 export default function CallToAction() {
   return (
-    <section className="bg-call-to-action bg-cover bg-center bg-no-repeat">
+    <section
+      className="bg-call-to-action bg-cover bg-center bg-no-repeat"
+      id="novinki"
+    >
       <div className="mx-auto max-w-6xl px-4 py-14 font-medium text-white">
         <div className="max-w-lg">
           <div className="flex gap-2 pb-5">
