@@ -19,7 +19,9 @@ interface TabListProps {
 export default function TabList({ isActive, cards }: TabListProps) {
   return (
     <section
-      className={`mx-auto ${isActive ? "grid" : "hidden"} max-w-6xl gap-7`}
+      className={`mx-auto ${
+        isActive ? "grid" : "hidden"
+      } max-w-6xl grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3`}
     >
       {cards.map((card) => (
         <Card

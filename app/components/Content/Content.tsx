@@ -10,7 +10,7 @@ export default function Content() {
 
   return (
     <section className="bg-main-color-100">
-      <div className="relative mx-auto flex flex-col overflow-hidden p-4">
+      <div className="relative mx-auto flex max-w-6xl flex-col overflow-hidden p-4">
         <h2 className="text-2xl font-medium">Репродукции</h2>
         <TabHeader activeTab={activeTab} setActiveTab={setActiveTab} />
         <TabList isActive={activeTab === "franzia"} cards={franceCards} />
