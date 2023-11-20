@@ -13,8 +13,8 @@ export default function TabHeader({ activeTab, setActiveTab }: TabProps) {
   };
 
   return (
-    <header className="flex min-w-fit shrink-0 flex-col overflow-x-auto overflow-y-hidden overscroll-x-contain py-5">
-      <nav className="flex gap-5">
+    <header className="flex flex-col py-5">
+      <nav className="scroll-width-none flex gap-5 overflow-x-auto overflow-y-hidden overscroll-contain whitespace-nowrap">
         <TabLink
           hash="franzia"
           title="Франция"
