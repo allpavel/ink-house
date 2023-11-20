@@ -6,7 +6,7 @@ import person3 from "@/public/Ellipse 32.png";
 
 export default function AboutUs() {
   return (
-    <section className="bg-main-color-100 font-medium">
+    <section className="bg-main-color-100 font-medium" id="onas">
       <div className="mx-auto max-w-6xl px-4 py-14 lg:flex lg:items-center lg:gap-5">
         <div className="mb-7">
           <Image src={mainImage} alt="" />

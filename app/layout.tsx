@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={raleway.variable}>
+    <html lang="en" className={`${raleway.variable} scroll-smooth`}>
       <body className="font-raleway text-main-black">
         <Header />
         {children}
