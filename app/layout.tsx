@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import Header from "./components/Header/Header";
-import "./globals.css";
 import Footer from "./components/Footer/Footer";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Ink House - реплики картин",
+  description:
+    "Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.",
+};
 
 const raleway = Raleway({
   subsets: ["cyrillic", "latin"],
