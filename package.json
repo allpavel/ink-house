@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "15.1.7",
+    "next": "15.2.2",
     "react": "^19",
     "react-dom": "^19"
   },
